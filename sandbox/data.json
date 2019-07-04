@@ -1,0 +1,10 @@
+{
+    "beans": [
+        {
+            "name": "Arabica"
+        },
+        {
+            "name": "Robusta"
+        }
+    ]
+}
