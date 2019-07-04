@@ -1,0 +1,19 @@
+{
+  "name": "hapi-graphql-checker",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jesse-Cameron/hapi-graphql-checker.git"
+  },
+  "author": "",
+  "license": "GNU GPLv3",
+  "bugs": {
+    "url": "https://github.com/Jesse-Cameron/hapi-graphql-checker/issues"
+  },
+  "homepage": "https://github.com/Jesse-Cameron/hapi-graphql-checker#readme"
+}
