@@ -4,7 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "sandbox": "nodemon ./sandbox/app.js",
+    "lint": "xo"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,18 @@
   "bugs": {
     "url": "https://github.com/Jesse-Cameron/hapi-graphql-checker/issues"
   },
-  "homepage": "https://github.com/Jesse-Cameron/hapi-graphql-checker#readme"
+  "homepage": "https://github.com/Jesse-Cameron/hapi-graphql-checker#readme",
+  "dependencies": {
+    "apollo-server": "^2.6.7",
+    "graphql-tools": "^4.0.5"
+  },
+  "devDependencies": {
+    "graphql": "^14.4.2",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1",
+    "xo": "^0.24.0"
+  },
+  "xo": {
+    "space": true
+  }
 }
