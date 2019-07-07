@@ -1,12 +1,14 @@
-const { gql } = require('apollo-server')
+const {gql} = require('apollo-server');
 
 exports.typeDefs = gql`
   input BeanInput {
-    name: String
+    name: String,
+    roaster: String
   }
 
   type Bean {
     name: String,
+    roaster: String @auth(accessLevel: ["admin"])
   }
 
   type Query {
@@ -14,6 +16,6 @@ exports.typeDefs = gql`
   }
 
   type Mutation {
-    addBean(input: BeanInput): Bean
+    addBean(input: BeanInput): Bean @auth(accessLevel: ["admin"])
   }
 `;

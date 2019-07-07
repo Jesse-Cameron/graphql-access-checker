@@ -4,7 +4,8 @@ const {beans} = data;
 
 exports.resolvers = {
   Bean: {
-    __resolveType: (object) => BeanTypes[object.type]
+    // eslint-disable-next-line no-undef
+    __resolveType: object => BeanTypes[object.type]
   },
 
   Query: {

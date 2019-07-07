@@ -1,10 +1,12 @@
 {
     "beans": [
         {
-            "name": "Arabica"
+            "name": "Humbler",
+            "roaster": "Proud Mary"
         },
         {
-            "name": "Robusta"
+            "name": "Mormora",
+            "roaster": "Market Lane Coffee"
         }
     ]
 }
