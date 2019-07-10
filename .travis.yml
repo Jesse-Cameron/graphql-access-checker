@@ -9,3 +9,11 @@ install:
   - npm install && cd sandbox && npm install && cd -
 script:
   - npm test
+deploy:
+  provider: npm
+  email: jessec.cameron@gmail.com
+  api_key:
+    secure: EVK4fMVOnlwzxXOjjCJ988qvEuc+8tGB//RcoHH//IarKHdQ3kh/HmmMZEa2hOfPb4C0QCsfkcKel86bao0l3Q0V0obwDeghQ9oP8IgObfXS0EW93WkliBP0vqQL6JaqwRbdjgdk2tpukLwxxJElpJK2mlr53a+GBeU+pe+ityr1YdbJeiDlY5n1aQ/vQxm9Z+5HH8pO2TaQX93GJZsbdzuFO812f7nR9OY2yRYZ75yNcnai/AJ4URe8N+BJaBYnWcNPGMvWvkVcwG/FMP0sRwf1iL/mJZR1vsjU//VZawZaSYFxjYiof0HWyarBiZb3eQk8cHHy8huZdou0+7gLI9O5o57b9d3WVjnio/az2AXt3puVyND8TWNnN7pBaKUzQ/0jQYWxTsuQH+dzxex0T/S5uUROADWeRakS6J6T3cSzGy1htn6BEA4h8MNBcUd6295Qo+RlcLYK6FjXM+qIuadlmSyTCp0WVHZ2sFIXkTmCFBBsqyJvOwysYKBjpiw/ReUPCliLKC26/quEpX6avv3u+xrbH54aHgY3TXhoY+MeJdGdQG8uMPLcDmzoxohzbwg1LSfYfC//YMLFGPJvE4F1KVzuM7ek8NF/TRdaKopPHkIk88ZOIec1WDGHSLl0sTXfEXVPntxRgSuFikW8veGhPO5vfSkSoguT1blRcbQ=
+  on:
+    tags: true
+    repo: Jesse-Cameron/graphql-access-checker
