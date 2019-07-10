@@ -6,6 +6,6 @@ node_js:
   - '10'
   - '12'
 install:
-  - npm install
+  - npm install && cd sandbox && npm install && cd -
 script:
   - npm test
