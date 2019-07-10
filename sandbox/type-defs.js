@@ -17,5 +17,6 @@ exports.typeDefs = gql`
 
   type Mutation {
     addBean(input: BeanInput): Bean @auth(accessLevel: ["admin"])
+    publicAddBean(input: BeanInput): Bean
   }
 `;

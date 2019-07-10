@@ -25,6 +25,7 @@
   "devDependencies": {
     "graphql": "^14.4.2",
     "jest": "^24.8.0",
+    "jsonwebtoken": "^8.5.1",
     "nodemon": "^1.19.1",
     "xo": "^0.24.0"
   },
@@ -33,7 +34,11 @@
     "globals": [
       "describe",
       "test",
-      "expect"
+      "expect",
+      "beforeEach",
+      "beforeAll",
+      "afterEach",
+      "afterAll"
     ]
   }
 }
