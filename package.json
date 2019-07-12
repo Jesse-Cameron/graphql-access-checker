@@ -1,5 +1,5 @@
 {
-  "name": "hapi-graphql-checker",
+  "name": "graphql-access-checker",
   "version": "0.1.0",
   "description": "",
   "main": "app.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jesse-Cameron/hapi-graphql-checker.git"
+    "url": "git+https://github.com/Jesse-Cameron/graphql-access-checker.git"
   },
   "author": "",
   "license": "GNU GPLv3",
   "bugs": {
-    "url": "https://github.com/Jesse-Cameron/hapi-graphql-checker/issues"
+    "url": "https://github.com/Jesse-Cameron/graphql-access-checker/issues"
   },
-  "homepage": "https://github.com/Jesse-Cameron/hapi-graphql-checker#readme",
+  "homepage": "https://github.com/Jesse-Cameron/graphql-access-checker#readme",
   "dependencies": {
     "apollo-server": "^2.6.7",
     "graphql-tools": "^4.0.5"
