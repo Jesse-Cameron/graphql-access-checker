@@ -2,7 +2,7 @@
   "name": "graphql-access-checker",
   "version": "0.1.2",
   "description": "",
-  "main": "app.js",
+  "main": "lib/app.js",
   "scripts": {
     "test": "jest && xo",
     "sandbox": "nodemon ./sandbox/app.js",
