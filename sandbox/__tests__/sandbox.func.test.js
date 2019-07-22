@@ -131,4 +131,20 @@ describe('Sandbox tests', () => {
     expect(data).not.toEqual(undefined); // Validate that there is data being returned
     expect(errors).toEqual(undefined); // Validate no error objects are being returned
   });
+  test('can validate when using a function that is a promise', async () => {
+    const validatorFunctionPromise = new Promise(resolve => {
+      setTimeout(() => {
+        resolve(false);
+      }, 100);
+    });
+    server = await buildServer(() => validatorFunctionPromise); // Allow access
+    options.payload = {
+      query,
+      operationName: 'GetAllBeans'
+    };
+    const {statusCode, payload} = await server.inject(options);
+    expect(statusCode).toEqual(200);
+    const errorMessage = JSON.parse(payload).errors[0].message;
+    expect(errorMessage).toEqual('Access check failed.');
+  });
 });
