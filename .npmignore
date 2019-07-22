@@ -2,8 +2,8 @@ jest.config.js
 .travis.yml
 .npmignore
 .gitignore
-sandbox/**/*
-'**/__tests__/**/*
+sandbox/
+**/__tests__/
 
 ## FROM GITIGNORE
 # Logs
