@@ -16,7 +16,7 @@
     "graphql-tools": "^4.0.5",
     "hapi": "^18.1.0",
     "jsonwebtoken": "^8.5.1",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.15"
   },
   "devDependencies": {
     "jest": "^24.8.0",
