@@ -2,15 +2,27 @@
 
 [![Build Status](https://travis-ci.org/Jesse-Cameron/graphql-access-checker.svg?branch=master)](https://travis-ci.org/Jesse-Cameron/graphql-access-checker)
 
-A smallish library easily utilising auth directives.
+A smallish library for easily creating auth with a [schema directive](https://www.apollographql.com/docs/graphql-tools/schema-directives/)
 
-### Dependecies
+### Package Dependencies
 
 - node >= 8.X
 - apollo-server >= 2.6.X
-- graphql >= 14.X
 
-## Getting started
+## Auth Directive Documentation
 
-- `npm install`
-- `npm run sandbox`
+`authDirective`
+
+**args:**
+
+- *validatorFunction* (function, required) - the function to run on incoming requests. Returns a boolean. Has two arguments:
+    - *context*: (object) - apollo-server context object
+    - *validAccess* (array) - the list of valid access levels (i.e. roles or permissions)
+
+`authDirectiveTypeDef`
+
+ - An gql object containing the the typedef for the schema directive
+
+## Example Implementation
+
+For an example implementation please consult the sandbox [file](sandbox/app.js)
