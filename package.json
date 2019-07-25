@@ -22,9 +22,10 @@
     "graphql-tools": "^4.0.5"
   },
   "peerDependencies": {
-    "apollo-server": "^2.7.0"
+    "apollo-server": "^2.7.1"
   },
   "devDependencies": {
+    "apollo-server": "^2.7.1",
     "graphql": "^14.4.2",
     "jest": "^24.8.0",
     "jsonwebtoken": "^8.5.1",
