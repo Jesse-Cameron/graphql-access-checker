@@ -19,17 +19,17 @@
   },
   "homepage": "https://github.com/Jesse-Cameron/graphql-access-checker#readme",
   "dependencies": {
-    "graphql-tools": "^4.0.6"
+    "graphql-tools": "^4.0.7"
   },
   "peerDependencies": {
     "apollo-server": "^2.9.16"
   },
   "devDependencies": {
-    "apollo-server": "^2.9.16",
+    "apollo-server": "^2.11.0",
     "graphql": "^14.6.0",
-    "jest": "^24.9.0",
+    "jest": "^25.2.7",
     "jsonwebtoken": "^8.5.1",
-    "nodemon": "^1.19.4",
+    "nodemon": "^2.0.2",
     "xo": "^0.24.0"
   },
   "xo": {
