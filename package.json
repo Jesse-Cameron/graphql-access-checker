@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/Jesse-Cameron/graphql-access-checker#readme",
   "dependencies": {
-    "graphql-tools": "^4.0.7"
+    "graphql-tools": "^6.0.14"
   },
   "peerDependencies": {
     "apollo-server": "^2.9.16"
